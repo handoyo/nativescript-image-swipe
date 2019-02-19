@@ -48,6 +48,9 @@ Gets or sets the property inside the items' object that defines the Url from whe
 * **allowZoom** - *boolean (default: true)*  
 Gets or sets whether zoom is enabled
 
+* **loaderColor** - *string*
+Sets the activity indicator color. Currently works in Android only.
+
 ## Usage
 You need to add `xmlns:is="nativescript-image-swipe"` to your page tag, and then simply use `<is:ImageSwipe/>` in order to add the widget to your page.
 ```xml
@@ -55,7 +58,7 @@ You need to add `xmlns:is="nativescript-image-swipe"` to your page tag, and then
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:is="nativescript-image-swipe" navigatingTo="navigatingTo">
     <GridLayout>
         <is:ImageSwipe items="{{ items }}" imageUrlProperty="imageUrl" 
-                       pageNumber="{{ pageNumber }}" pageChanged="pageChanged" backgroundColor="#000000">
+                       pageNumber="{{ pageNumber }}" pageChanged="pageChanged" backgroundColor="#000000" loaderColor="#279c96">
         </is:ImageSwipe>
     </GridLayout>
 </Page>
