@@ -1,5 +1,5 @@
 /*! *****************************************************************************
-Copyright (c) 2019 Tangra Inc.
+Copyright (c) 2018 Tangra Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,6 +25,7 @@ export class ImageSwipe extends ScrollView {
     public imageUrlProperty: string;
     public pageNumber: number;
     public allowZoom: boolean;
+    public loaderColor: string;
 
     public ios: any; /* UIScrollView */
     public android: any; /* android.support.v4.view.ViewPager */
@@ -40,3 +41,4 @@ export const allowZoomProperty: Property<ImageSwipe, boolean>;
 export const pageNumberProperty: CoercibleProperty<ImageSwipe, number>;
 export const itemsProperty: Property<ImageSwipe, any[] | ItemsSource>;
 export const imageUrlPropertyProperty: Property<ImageSwipe, string>;
+export const loaderColorProperty: Property<ImageSwipe,string>;
